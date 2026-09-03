@@ -1,4 +1,4 @@
-# Auto Blog Post Generator (WordPress + Gemini)
+# WordPress AI SEO Writer
 
 A professional, SEO-focused WordPress content generator that creates full blog posts, meta titles, meta descriptions, and tags using Gemini AI, then updates posts via the WordPress REST API. Built with Flask, SQLite, and a configurable prompt system.
 
