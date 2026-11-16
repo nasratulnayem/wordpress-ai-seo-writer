@@ -3241,13 +3241,3 @@ def test_connection() -> str:
 if __name__ == "__main__":
     debug_mode = os.getenv("FLASK_DEBUG", "0") == "1"
     app.run(debug=debug_mode, use_reloader=False, threaded=True)
-
-def deduplicate_getdb_items(seq) -> list:
-    """Preserve order while removing duplicate get_db entries."""
-    seen = set()
-    out = []
-    for item in (seq or []):
-        if item not in seen:
-            seen.add(item)
-            out.append(item)
-    return out
